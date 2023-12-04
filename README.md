@@ -8,11 +8,13 @@ network = NeuralNetwork([784, 30, 10])
 network.train(training_data, 30, 10, 3.0, test_data = test_data)
 ```
 The trained network gives us a classification rate of about 95.23% at its peak ("Epoch 28"):
->Epoch 0: 9078 / 10000
->Epoch 1: 9255 / 10000
->Epoch 2: 9296 / 10000
->...
->Epoch 27: 9502 / 10000
->Epoch 28: 9523 / 10000
->Epoch 29: 9520 / 10000
+```
+Epoch 0: 9078 / 10000
+Epoch 1: 9255 / 10000
+Epoch 2: 9296 / 10000
+...
+Epoch 27: 9502 / 10000
+Epoch 28: 9523 / 10000
+Epoch 29: 9520 / 10000
+```
 Experimenting with the input may give slightly better results, e.g. changing the number of hidden neurons to 100 allowed me to achieve a digit recognition accuracy of 96.47%.
